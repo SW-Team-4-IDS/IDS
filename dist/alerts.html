@@ -156,128 +156,104 @@
   <!--Main Navigation-->
 
   <!--Main layout-->
-<main style="margin-top: 58px;">
-  <div class="container pt-4">
-    <!-- table -->
-    <div class="container">
-      <div class="row">
-        <div class="col col-lg-6 col-md-6 rounded" style="background-color:#2B2B2B;">
-          <h3 style="color: aliceblue">High Alerts</h3>
-          <table class="table table-dark rounded">
-            <thead >
-              <tr>
-                <th scope="col" style="background-color: #505050;">N</th>
-                <th scope="col" style="background-color: #505050;">Device</th>
-                <th scope="col" style="background-color: #505050;">Date</th>
-                <th scope="col" style="background-color: #505050;">Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" id="tableBody">5</th>
-                <td id="tableBody">Workstation</td>
-                <td id="tableBody">11/03/22</td>
-                <td id="tableBody">11:09 AM</td>
-              </tr>
-              <tr>
-                <th scope="row" id="tableBody">7</th>
-                <td id="tableBody">Workstation</td>
-                <td id="tableBody">11/04/22</td>
-                <td id="tableBody">01:14 AM</td>
-              </tr>
-              <tr>
-                <th scope="row" id="tableBody">14</th>
-                <td id="tableBody">Workstation</td>
-                <td id="tableBody">11/04/22</td>
-                <td id="tableBody">09:18 AM</td>
-              </tr>
-              <tr>
-                <th scope="row" id="tableBody">8</th>
-                <td id="tableBody">Workstation</td>
-                <td id="tableBody">11/04/22</td>
-                <td id="tableBody">03:22 AM</td>
-              </tr>
-            </tbody>
-          </table>
-    
+  <main style="margin-top: 58px;">
+    <div class="container pt-4">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-4"  style="background-color:#2B2B2B;">
+                <h3 style="color: aliceblue">High Alerts</h3>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse0" style="color: red">
+                          128.32.1: Port Scan</a>
+                        </h4>
+                        </div>
+                        <div id="collapse0" class="panel-collapse collapse in" style="color: aliceblue">
+                            <div class="panel-body">Source: 182.81.2 Destination: 128.32.1<br>Port Scan detected</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"  style="background-color:#2B2B2B;">
+                <h3 style="color: aliceblue">Medium Alerts</h3>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color: orange">
+                          128.32.1: Unexpected communication</a>
+                        </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse in" style="color: aliceblue">
+                            <div class="panel-body">Source: 182.81.2 Destination: 128.32.1<br>Source ip has communicated to the device</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" style="color: orange">
+                          161.76.6: Unwanted request</a>
+                        </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse in" style="color: aliceblue">
+                            <div class="panel-body">Source: 151.98.0 Destination: 161.76.6<br>Source ip has requested to connect to device</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4"  style="background-color:#2B2B2B;">
+                <h3 style="color: aliceblue">Small Alerts</h3>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4" style="color: yellow">
+                          161.76.6: Unknown IP</a>
+                        </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse in" style="color: aliceblue">
+                            <div class="panel-body">Source: 151.98.0 Destination: 161.76.6<br>Unkown IP detected</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" style="color: yellow">
+                          128.32.1: Small Anamoly</a>
+                        </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse in" style="color: aliceblue">
+                            <div class="panel-body">Source: 182.81.2 Destination: 128.32.1<br>Unkown IP detected</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-group" id="accordion">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5" style="color: yellow">
+                          162.02.5: Small Anamoly</a>
+                        </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse in" style="color: aliceblue">
+                            <div class="panel-body">Source: 182.81.2 Destination: 162.02.5.32.1<br>Unkown IP detected</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
       </div>
     </div>
-  </div></br></br>
-
-  <!-- Bottom squares  -->
-  <section>
-    <div class="row">
-      <div class="col-xl-6 col-sm-6 col-12 mb-4">
-        <div class="card text-white bg-dark w-50">
-          <div class="card-body">
-            <div class="d-flex justify-content-between px-md-1">
-              <div class="align-self-center">
-                <i class="bi bi-bar-chart-fill" id="Icons"></i>
-              </div>
-              <div class="text-end">
-                <h3>278</h3>
-                <p class="mb-0">Total Alerts</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-sm-6 col-12 mb-4">
-        <div class="card w-50 text-white bg-dark">
-          <div class="card-body">
-            <div class="d-flex justify-content-between px-md-1">
-              <div class="align-self-center">
-                <i class="bi bi-exclamation-lg" id="Icons"></i>
-            </div>
-            <div class="text-end">
-              <h3>115</h3>
-              <p class="mb-0">Low Alerts</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-sm-6 col-12 mb-4">
-        <div class="card w-50 text-white bg-dark">
-          <div class="card-body">
-            <div class="d-flex justify-content-between px-md-1">
-              <div class="align-self-center">
-                <i class="bi bi-exclamation-circle"id="Icons"></i>
-              </div>
-              <div class="text-end">
-                <h3>73</h3>
-                <p class="mb-0">Medium Alerts</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-xl-6 col-sm-6 col-12 mb-4">
-        <div class="card w-50 text-white bg-dark">
-          <div class="card-body">
-            <div class="d-flex justify-content-between px-md-1">
-              <div class="align-self-center">
-               
-                <i class="bi bi-exclamation-circle-fill" id="Icons"></i>
-            </div>
-            <div class="text-end">
-              <h3>23</h3>
-              <p class="mb-0">High Alerts</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
+  </main>
 <!--Main layout-->
 
 <script src="./src/index.js"></script>
 </body>
 </html>
-
-
 
