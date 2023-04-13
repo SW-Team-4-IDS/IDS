@@ -15,7 +15,7 @@ for sys in enumerate(systems_on_net):
     if sys[1]['name'] == sys_name:
         target_sys = systems_on_net[sys[0]]
 
-print(f"Target System:\n{target_sys}")
+print(f"Target System: {target_sys}")
 
-print("Monitoring network....")
+print("Monitoring network...\n")
 monitor_network(target_sys)
